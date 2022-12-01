@@ -1,0 +1,190 @@
+/* MOBILE */
+.logo-nav {
+  display: none;
+}
+
+.perfil-nav {
+  display: none;
+}
+
+header {
+  width: 100%;
+  grid-area: header;
+  /* height: 3.5rem; */
+  display: flex;
+  align-items: center;
+  padding: var(--padding-x);
+  background-color: #ABFA46;
+  position: fixed;
+  z-index: 2;
+  bottom: 0%;
+}
+
+.nav {
+  width: 100%;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.header-perfil {
+  grid-area: header-perfil;
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #593DA8;
+  color: #ebebeb;
+}
+
+.perfil{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo img {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: cover;
+}
+
+.user-perfil img {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: .5rem;
+  object-fit: cover;
+}
+
+.logo div{
+  display: none;
+}
+
+.menu {
+  grid-area: menu-nav;
+  height: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1em;
+}
+.search-container form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.search-container input {
+  width: 70%;
+  padding: .5rem .7rem;
+  border-radius: .5rem 0 0 .5rem;
+}
+
+.search-container button {
+  width: 2rem;
+  border-radius: 0 .5rem .5rem 0 ;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background-color: var(--acent-color);
+  color: white;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+  color: gray;
+}
+
+/* MOBILE */
+
+
+/* TABLET */
+@media all and (min-width: 768px) {
+  header {
+    grid-area: header;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    padding: var(--padding-x);
+    background-color: #ABFA46;
+    position: static;
+  }
+
+  .nav {
+    width: 100%;
+    grid-area: nav;
+    display: grid;
+    grid-template:
+      'logo-nav menu-nav perfil-nav' auto/
+      30% auto 30%;
+    position: static;
+  }
+
+  .logo img {
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+  }
+
+  .user-perfil img {
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+  }
+
+  .logo div{
+    display: block;
+  }
+
+  .header-perfil {
+    display: none;
+  }
+
+  .logo-nav {
+    display: flex;
+    grid-area: logo-nav;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--logo-font);
+  }
+
+  .menu {
+    grid-area: menu-nav;
+    height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .menu a:hover {
+    text-decoration: underline;
+    color: gray;
+  }
+
+  .perfil-nav {
+    display: flex;
+    grid-area: perfil-nav;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+  }
+}
+/* TABLET */

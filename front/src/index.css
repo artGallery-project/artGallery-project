@@ -1,0 +1,28 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+/* Fuentes */
+
+
+/* Variables */
+@import'./styles/_01variables.css';
+/* Variables */
+
+
+/* General */
+@import'./styles/_02general.css';
+/* General */
+
+
+/* Sections */
+@import'./styles/_03header.css';
+@import'./styles/_04footer.css';
+@import'./styles/_05home.css';
+/* @import'./styles/_07login.css';
+@import'./styles/_08registro.css';
+@import'./styles/_09sales.css';
+@import'./styles/_10tabUsuarios.css';
+@import'./styles/_11checkout.css'; */
+@import'./styles/_12cart.css';
+/* @import'./styles/_13modal.css'; */
+/* Sections */

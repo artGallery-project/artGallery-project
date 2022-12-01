@@ -1,0 +1,29 @@
+/* MOBILE */
+footer {
+  display: none;
+}
+/* MOBILE */
+
+
+/* TABLET */
+@media all and (min-width: 768px) {
+  footer {
+    grid-area: footer;
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-x);
+    background-color: #593DA8;
+    
+    margin: 0%;
+
+    /* border: dotted; */
+  }
+  footer .text-footer {
+    font-size: .51em;
+    color: aliceblue;
+  }
+}
+/* TABLET */

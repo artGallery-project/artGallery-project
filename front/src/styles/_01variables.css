@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&display=swap');
+:root {
+    --main-color: #ABFA46;
+    --secondary-color: #cbf19a;
+    --acent-color: #593DA8;
+    --neutral-color: ;
+    --main-font: 'Montserrat', sans-serif;
+    --logo-font: 'Iceberg';
+    --normal: 500;
+    --semi-bold: 600;
+    --bold: 700;
+    --padding-x: 0 1rem;
+}
