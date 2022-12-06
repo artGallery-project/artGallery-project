@@ -17,14 +17,48 @@ body {
 
 #login_btn,
 #view_btn {
-  background-color: var(--acent-color);
+  background-color: var(--acent-color)!important;
   color: white;
   padding: 0.4rem 1.8rem;
   font-family: calibri;
   align-self: center;
+  border-radius: 5rem;
 }
 #view_btn:hover{
-  color:black
+  color:black;
+}
+
+.registro-button{
+  border-radius: 5rem;
+  border: none;
+  max-width: 200px;
+  width: 100%;
+  cursor: pointer;
+  font-size: var(--normal);
+  /* height: 40px;
+  margin-top: 14px;
+  margin-bottom: 30px; */
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.registro-button::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: var(--main-color);
+  z-index: -1;
+  transition: 0.8s;
+  bottom: 0;
+  border-radius: 50% 50% 0 0;
+}
+
+.registro-button:hover::before{
+  height: 180%;
 }
 
 .footer-brand{
@@ -53,8 +87,20 @@ body {
 
   /* border: dotted; */
 }
-
 /* MOBILE */
+
+
+/* Alert */
+#__react-alert__ div div div {
+  width: auto !important;
+  border-radius: 5rem !important;
+  /* background-color: var(--acent-color)!important; */
+  padding: 0.5rem 1.8rem !important;
+  font-family: var(--logo-font) !important;
+  box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43) !important;
+  color: var(--main-color) !important;
+}
+/* Alert */
 
 
 /* TABLET */
@@ -68,6 +114,7 @@ body {
     align-content: space-between;
     grid-template: 
     'header' auto
+    'home' auto
     'footer'auto/
     auto;
 

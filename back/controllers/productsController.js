@@ -3,6 +3,14 @@ const producto = require('../models/producto');
 /* Ver la lista de productos */
 exports.getProducts = async (req, res, next) => {
   const products = await producto.find();
+  if (!products) {
+    return res.status(404).json({
+      success: false,
+      error: true
+    })
+  }
+
+
   res.status(200).json({
     success: true,
     productsCount: products.length,
@@ -19,7 +27,8 @@ exports.getProductById = async (req, res, next) => {
   if (!product) {
     return res.status(404).json({
       success: false,
-      message: 'Producto no encontrado'
+      message: 'Producto no encontrado',
+      error:true
     })
   }
   res.status(200).json({
