@@ -1,0 +1,43 @@
+.modal-backdrop {
+    background-color: lightgray;
+}
+
+.modal-header {
+    background-color: var(--main-color);
+}
+
+.active a.page-link {
+    background-color: var(--main-color);
+    color: blue;
+    border: 1px solid var(--main-color);
+}
+
+.react-bootstrap-table-pagination-list {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-img-modal {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.3rem;
+}
+
+.card-img-modal img {
+    width: 15rem;
+    border-radius: 2rem;
+}
+
+.card-description-modal {
+    display: grid;
+}
+
+.row-info-modal {
+    display: flex;
+    flex-direction: row;
+    margin: 0 1.4rem;
+}
+
+.label-info-modal {
+    width: 11.5rem;
+}

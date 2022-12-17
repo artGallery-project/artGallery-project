@@ -15,12 +15,12 @@ export const Home = () => {
       return alert.error(error)
     }
     dispatch(getProducts());
-    alert.success('OK');
+    /* alert.success('OK'); */
   }, [dispatch, alert, error])
 
   return (
     <Fragment>
-      {loading ? <h2>Cargando...</h2> : (
+      {loading ? <i className="fa fa-refresh fa-spin fa-2x fa-fw"/> : (
         <Fragment>
           <MetaData title="Tu mejor galería"></MetaData>
           <div className='home-container'>

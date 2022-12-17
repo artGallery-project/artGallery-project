@@ -271,13 +271,13 @@ footer {
 
 .stockCounter input {
   border: none;
-  width: 3rem;
+  width: 2rem;
   text-align: center;
 }
 
 .plus,
 .minus {
-  padding: 0.1rem 0.5rem;
+  padding: 0.3rem 0.5rem;
 }
 
 .stockCounter input::-webkit-outer-spin-button,
@@ -482,7 +482,7 @@ footer {
 
 /* Admin Sidebar */
 
-.sidebar-wrapper {
+/* .sidebar-wrapper {
   display: flex;
   width: 100%;
   align-items: stretch;
@@ -563,7 +563,7 @@ ul.CTAs a {
   display: block;
   border-radius: 5px;
   margin-bottom: 5px;
-}
+} */
 
 /* Products List Admin */
 #products_table .btn {

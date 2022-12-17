@@ -1,0 +1,29 @@
+.table-bordered thead td,
+.table-bordered thead th {
+    border-bottom-width: 2px;
+    color: rgb(54, 54, 54);
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: gray;
+}
+
+.table th,
+.table td {
+    background-color: white;
+    padding: 0.75rem;
+    vertical-align: top;
+}
+
+.sales-card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+
+.sales-card-body h2 {
+    text-align: left;
+    margin-bottom: 1rem;
+}

@@ -19,11 +19,12 @@
 @import'./styles/_04footer.css';
 @import'./styles/_05home.css';
 @import'./styles/_06productDetails.css';
-/* @import'./styles/_07login.css';
+@import'./styles/_06usuarios.module.css';
+@import'./styles/_07login.css';
 @import'./styles/_08registro.css';
 @import'./styles/_09sales.css';
 @import'./styles/_10tabUsuarios.css';
-@import'./styles/_11checkout.css'; */
+@import'./styles/_11checkout.css';
 @import'./styles/_12cart.css';
-/* @import'./styles/_13modal.css'; */
+@import'./styles/_13modal.css';
 /* Sections */
