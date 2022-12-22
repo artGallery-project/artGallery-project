@@ -27,6 +27,7 @@ const productsSchema = mongoose.Schema({
     type: Number,
     default: 0
   },
+  
   imagen: [
     {
       public_id: {
@@ -39,6 +40,7 @@ const productsSchema = mongoose.Schema({
       }
     }
   ],
+
   categoria: {
     type: String,
     required: [true, "Por favor seleccione la categoría del producto."],
@@ -53,20 +55,24 @@ const productsSchema = mongoose.Schema({
       ]
     }
   },
+
   vendedor: {
     type: String,
     required: [true, "Por favor registre el vendedor del producto."]
   },
+
   inventario: {
     type: Number,
     required: [true, "Por favor registre el stock del producto"],
     maxLength: [5, "Cantidad maxima del producto no puede sobrepasar 99999"],
     default: 0
   },
+
   numCalificaciones: {
     type: Number,
     default: 0
   },
+
   opiniones: [
     {
       nombreCliente: {
@@ -83,10 +89,19 @@ const productsSchema = mongoose.Schema({
       }
     }
   ],
+
+  /* Relacón entidad producto-usuario(auth) */
+  user: {
+    type: mongoose.Schema.ObjectId,
+    ref: 'User', //Esta relacionado con la variable User de authController.js
+    required: true
+  },
+  /* Relacón entidad producto-usuario(auth) */
+
   fechaCreacion: {
     type: Date,
     default: Date.now
   }
 })
 
-module.exports=mongoose.model('productos',productsSchema);
+module.exports = mongoose.model('productos', productsSchema);

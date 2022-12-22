@@ -9,6 +9,7 @@ import HeaderMobil from './components/header/HeaderMobil';
 import Dashboard from './components/admin/Dashboard';
 import ProductList from './components/admin/ProductList';
 import NewProduct from './components/admin/NewProduct';
+import Compras from './components/cart/CartHome';
 
 function App() {
   
@@ -26,6 +27,7 @@ function App() {
             <Route path='/dashboard' element={<Dashboard/>}/>
             <Route path='/productList' element={<ProductList />} />
             <Route path='/newProduct' element={<NewProduct />} />
+            <Route path='/compras' element={<Compras/>}/>
           </Routes>
         </div>
         <Footer />

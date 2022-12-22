@@ -5,7 +5,7 @@ const PerfilClient = () => {
   return (
     <div className="perfil ">
       <div className='dropdown perfil'>
-        <Link to='/productList'>
+        <Link to='/compras'>
           <div className='d-flex align-items-center'>
             <i className="bi bi-cart fa-2x text-dark d-flex align-items-center m-1" aria-hidden="false"></i>
             <span className="ml-1 bg-gradient py-2 px-3 text-dark shadow-sm">2</span>{/* id="cart_count" */}
