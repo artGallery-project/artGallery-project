@@ -39,8 +39,8 @@ body {
   width: 90%;
   margin-right: 35%;
 }
-f
-#search_field {
+
+f #search_field {
   height: 2.4rem;
   padding: 1rem;
 }
@@ -200,6 +200,7 @@ footer {
   height: 80px;
   padding-left: 0;
 }
+
 .loader:after {
   content: ' ';
   display: block;
@@ -211,10 +212,12 @@ footer {
   border-color: #fa9c23 transparent;
   animation: lds-dual-ring 1.2s linear infinite;
 }
+
 @keyframes lds-dual-ring {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -468,16 +471,20 @@ footer {
 
 /* Pagination */
 .page-item.active .page-link {
-  background-color: #fa9c23;
-  border-color: #fa9c23;
+  /* background-color: #fa9c23;
+  border-color: #fa9c23; */
+  background-color: #593DA8;
+  border-color: #593DA8;
 }
 
 .page-link {
-  color: #fa9c23;
+  /* color: #fa9c23; */
+  color: #593DA8;
 }
 
 .page-link:hover {
-  color: #fa9c23;
+  /* color: #fa9c23; */
+  color: #593DA8;
 }
 
 /* Admin Sidebar */
